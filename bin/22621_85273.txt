@@ -1,0 +1,16 @@
+Feb 26 2021, 08:52:76
+EEG Signals: 1 - when subject clicks a button, 2 - when a new number comes on screen
+
+msec	Number	Code
+2005	8	Onscreen
+6003	2	Onscreen
+10007	5	Onscreen
+14002	7	Onscreen
+16353	2	Pressed
+18008	4	Onscreen
+20911	7	Pressed
+22003	7	Onscreen
+24487	5	Pressed
+26006	1	Onscreen
+30012	4	Onscreen
+END

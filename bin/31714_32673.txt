@@ -1,0 +1,23 @@
+Mar 17 2014, 15:26:75
+EEG Signals: 1 - when subject clicks a button, 2 - when a new number comes on screen
+
+msec	Number	Code
+2014	8	Onscreen
+6037	2	Onscreen
+10062	5	Onscreen
+10820	8	Pressed
+14084	7	Onscreen
+14568	2	Pressed
+18112	4	Onscreen
+18983	5	Pressed
+22137	7	Onscreen
+22595	7	Pressed
+26159	1	Onscreen
+26602	4	Pressed
+30186	4	Onscreen
+30647	7	Pressed
+33294	1	Pressed
+34209	9	Onscreen
+38233	6	Onscreen
+42259	5	Onscreen
+END
