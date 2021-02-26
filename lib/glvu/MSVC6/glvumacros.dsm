@@ -1,0 +1,41 @@
+Sub GLVULicense()
+'DESCRIPTION: Adds a license to the top of a GLVU file
+	if ActiveWindow.type <> "Text" Then
+	  MsgBox "This macro can only be run when a text editor window is active."
+	else
+		' Change this to change the authors in the copyright statement.
+		Authors = "The University of North Carolina at Chapel Hill"
+
+		' move the insertion point to the front of the document
+		ActiveDocument.Selection.StartOfDocument dsMove
+		' get the filename
+		filename = ActiveDocument.Name
+
+		if ActiveDocument.Language = dsVBSMacro Then 
+			comment = "'"
+		else 
+			comment = "//"
+		End If
+		
+		Descr =        comment + "-----------------------------------------------------------------------------" + _
+				vbLf + comment + " File : " + filename + _
+				vbLf + comment + "-----------------------------------------------------------------------------" + _
+				vbLf + comment + " GLVU : Copyright 1997 - " & Year(Now()) & " " + _
+				vbLf + comment + "        " + Authors + _
+				vbLf + comment + "-----------------------------------------------------------------------------" + _
+				vbLf + comment + " Permission to use, copy, modify, distribute and sell this software and its " + _
+				vbLf + comment + " documentation for any purpose is hereby granted without fee, provided that " + _
+				vbLf + comment + " the above copyright notice appear in all copies and that both that copyright" + _
+				vbLf + comment + " notice and this permission notice appear in supporting documentation. " + _
+				vbLf + comment + " Binaries may be compiled with this software without any royalties or " + _
+				vbLf + comment + " restrictions. " + _
+				vbLf + comment + _
+				vbLf + comment + " The University of North Carolina at Chapel Hill makes no representations " + _
+				vbLf + comment + " about the suitability of this software for any purpose. It is provided " + _
+				vbLf + comment + " " + Chr(34) + "as is" + Chr(34) + " without express or implied warranty." + vbLf + vbLf
+				
+		ActiveDocument.Selection = Descr
+	End If	
+
+	'TODO: Put macro code here
+End Sub
